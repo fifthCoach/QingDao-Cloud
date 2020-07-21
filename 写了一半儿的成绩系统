@@ -1,0 +1,99 @@
+#include<bits/stdc++.h>
+using namespace std;
+int ps;
+struct score{
+	int id;
+	char name[20];
+	float yw,sx,yy,tot;
+	
+}stu[1000];
+void mm();
+void is();
+void rs();
+void ms();
+void ss();
+void ds();
+void es();
+void is(){
+	system("CLS");
+	int num;
+	char c;
+	cout<<"输人数"; 
+	cin>>num;
+	ps=num;
+	for(int i=0;i<num;i++)
+	{
+		cout<<i+1<<":";
+		stu[i].id=i+1;
+		cin>>stu[i].name>>stu[i].yw>>stu[i].sx>>stu[i].yy;
+		stu[i].tot=stu[i].sx+stu[i].yw+stu[i].yy; 
+	 } 
+	 cout<<"输完了，随便输个数字";
+	 c=getchar();
+	 c=getchar();
+	 system("CLS");
+	 mm();
+}
+void ds(){
+		system("CLS");
+        char c;
+		cout<<"ID\t姓名\t总分\t语文\t英语\t数学\t"<<endl; 
+		for(int i=0;i<ps;i++)
+	{
+		stu[i].id=i+1;
+		cout<<stu[i].id<<"\t"<<stu[i].name<<"\t"<<stu[i].tot<<"\t"<<stu[i].yw<<"\t"<<stu[i].yy<<"\t"<<stu[i].sx<<"\t"<<endl;
+	 }
+	c=getchar();
+	c=getchar();
+	system("CLS");
+     mm();
+	
+}
+void ms(){
+	
+}
+void as(){
+	
+}
+void ss(){
+	
+}
+void rs(){
+	
+}
+void es(){
+	cout<<"js";
+	exit(0);
+}
+void mm(){
+	 cout<<"____________________"<<endl;
+      cout<<"    成绩管理系统    "<<endl;
+      cout<<"____________________"<<endl<<endl<<endl;
+      cout<<"[1]成绩录入"<<endl;
+      cout<<"[2]成绩显示"<<endl;
+	  cout<<"[3]修改成绩"<<endl;
+	  cout<<"[4]成绩分析"<<endl;
+	  cout<<"[5]保存"<<endl;
+	  cout<<"[6]读取"<<endl;
+	  cout<<"[0]退出"<<endl;
+	  cout<<"输你妈数字！"<<endl;
+	 
+}
+int main()
+{
+      int n;
+      mm();
+	  while(1){
+	  	cin>>n;
+	  	switch(n){
+	  		case 0:es();break;
+	  		case 1:is();break;
+	  		case 2:ds();break;
+	  		case 3:ms();break;
+	  		case 4:as();break;
+	  		case 5:ss();break;
+	  		case 6:rs();break;
+	  		default:cout<<"傻逼，输错了";
+		  }
+	  } 
+}
